@@ -1,19 +1,22 @@
 package m1ex;
 
 public class S02 {
-    /**
-     * Average speed
-     * 
-     * @param distance in meters
-     * @param time     in seconds
-     * @return speed in meters per second
-     */
-    public static double speed(double distance, double time) {
-        // TODO
-        return 0;
-    }
+	/**
+	 * Average speed
+	 * 
+	 * @param distance in meters
+	 * @param time     in seconds
+	 * @return speed in meters per second
+	 */
+	public static double speed(double distance, double time) {
+		if (time < 0.0 || distance < 0.0) {
+			return -1.0;
+		}
+		return distance / time;
 
-    /**
+	}
+
+	/**
      * Distance between (x0, y0) and (x1, y1)
      * 
      * @param x0 first point x
@@ -24,43 +27,44 @@ public class S02 {
      */
     public static double distance(int x0, int y0, int x1, int y1) {
         // TODO
-        return 0;
+        //return 0;
+    	return sqrt()pow((x0-x1),2)
     }
 
-    /**
-     * Engine capacity
-     * 
-     * @param bore   in mm
-     * @param stroke in mm
-     * @param nr     number of cylinders
-     * @return the engine capacity in cm^3
-     */
-    public static double engineCapacity(double bore, double stroke, int nr) {
-        // TODO
-        return 0;
-    }
+	/**
+	 * Engine capacity
+	 * 
+	 * @param bore   in mm
+	 * @param stroke in mm
+	 * @param nr     number of cylinders
+	 * @return the engine capacity in cm^3
+	 */
+	public static double engineCapacity(double bore, double stroke, int nr) {
+		// TODO
+		return 0;
+	}
 
-    /**
-     * Add up all the digits in an integer
-     * 
-     * @param value
-     * @return sum of digits
-     */
-    public static int digitSum(int value) {
-        // TODO
-        return 0;
-    }
+	/**
+	 * Add up all the digits in an integer
+	 * 
+	 * @param value
+	 * @return sum of digits
+	 */
+	public static int digitSum(int value) {
+		// TODO
+		return 0;
+	}
 
-    /**
-     * Score based on distance from (0, 0) [1, 5, 10] -> [10, 5, 1, 0]
-     *
-     * @param x
-     * @param y
-     *
-     * @return
-     */
-    public static int score(double x, double y) {
-        // TODO
-        return 0;
-    }
+	/**
+	 * Score based on distance from (0, 0) [1, 5, 10] -> [10, 5, 1, 0]
+	 *
+	 * @param x
+	 * @param y
+	 *
+	 * @return
+	 */
+	public static int score(double x, double y) {
+		// TODO
+		return 0;
+	}
 }
